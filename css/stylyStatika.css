@@ -1,0 +1,155 @@
+#crossroadStatika{
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#crossroadTeplo{
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#crossroadStatikaPrurezy{
+    margin: auto;
+    margin-top: 180px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.crossroadButton a{
+        /* background: url(../images/kubatura_ikona_1000x1000px.png); */
+        border: 4px solid #24A669;
+        border-radius: 18px;
+        width: 170px;
+        height: 120px;
+        outline: none;
+        background-color: #1adc813d;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.formPrurezy{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+}
+#buttonTagsPrurezy{
+    display: flex;
+    flex-direction: row;
+    /* width: 80%; */
+    margin-top: 50px;
+    margin-bottom: 80px;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+}
+#prurezImain{
+    border: 1px solid #24A669;
+}
+#prurezTmain{
+    border: 1px solid #24A669;
+}
+#prurezUmain{
+    border: 1px solid #24A669;
+}
+#prurezHmain{
+    border: 1px solid #24A669;
+}
+#prurezOpakTmain{
+    border: 1px solid #24A669;
+}
+#prurezNmain{
+    border: 1px solid #24A669;
+}
+#prurezOmain{
+    border: 1px solid #24A669;
+}
+#prurezTrammain{
+    border: 1px solid #24A669;
+}
+#buttonTagsPrurezy a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#buttonTagsPrurezy a img{
+    width: 50px;
+}
+.zadaniPrurezu{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+.zadaniPrurezu h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+}
+.zadaniPrurezu strong{
+    font-weight: normal;
+}
+.zadaniPrurezu label{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.zadaniPrurezu input{
+	width: 100%;
+	padding: 7px;
+	/* margin: auto; */
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #fff;
+	outline: none;
+}
+.ilustrace{
+    display: flex;
+    justify-content: right;
+}
+.vstup{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.vstup p{
+    font-size: 16px;
+}
+#sirkaVyska{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+}
+.inputSV{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.inputPas{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+.inputTl{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+.inputTlU{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}

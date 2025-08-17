@@ -1,0 +1,679 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica,Tahoma, sans-serif;
+	display: flex;
+	flex-direction: column;
+    z-index: -1;
+}
+	/* hlavička */
+		/* logo */
+.horni {
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 6vw;
+	background: rgba(0, 0, 0, 0.4);
+	
+}
+.horni .logo a{
+	padding: 0px;
+	margin: 0px;
+}
+.horni .logo a img{
+	position: fixed;
+	height: 70px;
+	margin-top: 1vh;
+	top: 10px;
+	left: 5vw;
+	width: 70px;
+}
+.horni .logo a img:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s;
+}
+    /* menu */
+.horni .ikonyMenu{
+	display: flex;
+	flex-direction: row;
+	float: right;
+	
+}
+.horni #menuMobil{
+	display: none;
+	/* margin-right: 50px; */
+	margin-top: 10px;
+    height: 60px;
+    top: 10px;
+    
+}
+.horni #menuMobil button{
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+}
+.horni #menuMobil button img{
+	width: 50px;
+	height: 50px;
+}
+.horni #menuMobil button img:hover{
+	cursor: pointer;
+}
+.horni #crossMobil{
+	position: fixed;
+    display: none;
+    margin-top: 10px;
+    height: 60px;
+    left: 65%;
+}
+.horni #crossMobil button{
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+}
+.horni #crossMobil button img{
+	width: 50px;
+	height: 50px;
+}
+.horni #crossMobil button img:hover{
+	cursor: pointer;
+}
+		/* seznam */
+.horni #seznam{
+    list-style: none;
+    float: right;
+    margin: 0;
+    margin-right: 1vw;
+    padding: 0;
+    display: flex;
+}
+.link{
+	line-height: 90px;
+	color: #fff;
+	text-decoration: none;
+	padding: 1vh 2vw;
+	font-size: 16px;
+    transition: all 0.4s;
+}
+#geodezie:hover{
+    border-bottom: 2px solid #23AB6F;
+    font-size: 18px;
+    transition: font-size 0.3s;
+}
+#statika:hover{
+    border-bottom: 2px solid #23AB6F;
+    font-size: 18px;
+    transition: font-size 0.3s;
+}
+#teplo:hover{
+    border-bottom: 2px solid #23AB6F;
+    font-size: 18px;
+    transition: font-size 0.3s;
+}
+    /* seznam pro mobily*/
+.horni #seznamMobil{
+    list-style: none;
+    float: right;
+    margin: 0;
+    margin-top: 90px;
+    width: 250px;
+    /* margin-right: 1vw; */
+    padding: 0;
+	background: rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-direction: column;
+}
+.horni #seznamMobil li a{
+    line-height: 50px;
+    /* color: #fff; */
+    margin-left: 8px;
+    padding: 0% 10%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.horni #seznamMobil li a:hover{
+	font-size: 16px;
+	transition: font-size 0.3s;
+}
+
+    /* main */
+main{
+    margin: 0;
+}
+main .nahled{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/background_freeLincence1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-attachment: fixed;
+}
+#crossroadGeodezie{
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.crossroadButton{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 70px;
+    align-items: center;
+    transition: all 0.5s;
+}
+.crossroadButton button{
+    /* background: url(../images/kubatura_ikona_1000x1000px.png); */
+    border: 4px solid #24A669;
+    border-radius: 18px;
+    width: 170px;
+    height: 120px;
+    outline: none;
+    background-color: #1adc813d;
+    cursor: pointer;
+}
+.crossroadButton:hover{
+    transform: scale(120%);
+}
+
+.crossroadButton h2{
+    color: #24A669;
+    
+}
+/*-----------Vrstevnice formulář---------*/
+#buttonTags{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* margin: auto; */
+    margin-top: 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.tagButton{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* width: 150px; */
+    height: 35px;
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 7px 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.tagButton h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+.tagButton2{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.0);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 7px 30px;
+}
+.tagButton2 h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+#vypocetVysky{
+    color: #23A669;
+    border: 1px solid #23A669;
+}
+#vypocetVzdalenosti{
+    color: #fff;
+    border: 1px solid #fff;
+}
+#vypocetVysky2{
+    color: #fff;
+    border: 1px solid #fff;
+}
+#vypocetVzdalenosti2{
+    color: #23A669;
+    border: 1px solid #23A669;
+}
+.formVrstevnice{
+    display: none;
+    width: 80%;
+    flex-direction: column;
+	position: relative;
+	margin: auto;
+    margin-top: 150px;
+}
+.formKubatury{
+    display: none;
+    width: 80%;
+    flex-direction: column;
+	position: relative;
+	margin: auto;
+    margin-top: 150px;
+}
+#zadaniVrstevnic label{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#zadaniKubatur label{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#AB{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+#ABU{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+}
+#AB2{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+/* -----------kubatury */
+#ABCDEF{
+    display: flex;
+    flex-direction: column;
+    /* gap: 200px; */
+}
+#podstavaAB{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+}
+#vyskyCD{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+}
+#vyskyEF{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+}
+.inputKubatury{
+    display: flex;
+    flex-direction: column;
+}
+#vysledek{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    top: -80px;
+}
+.ilustrace #imgVrstevnice{
+    width: 500px;
+}
+.ilustrace2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -40px;
+}
+#imgPodstava{
+    width: 200px;
+}
+#imgObjem{
+    width: 300px;
+}
+#hodnotyAB{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#hodnotyC{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.inputC{
+    display: flex;
+    flex-direction: column;
+}
+.inputV{
+    display: flex;
+    flex-direction: column;
+}
+#chyby{
+    margin-top: 10px;
+}
+#chyba{
+    color: red;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+#zadaniVrstevnic input{
+	width: 100%;
+	padding: 7px;
+	/* margin: auto; */
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #fff;
+	outline: none;
+}
+#zadaniKubatur input{
+	width: 100%;
+	padding: 7px;
+	/* margin: auto; */
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #fff;
+	outline: none;
+}
+#message{
+    width: 100%;
+	min-height: 100px;
+	margin: auto;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #fff;
+	outline: none;
+	margin-top: 20px;
+}
+#message::placeholder{
+    color: rgb(224, 224, 224);
+}
+input::placeholder{
+	color: rgb(224, 224, 224);
+}
+input[type="submit"] {
+	width: 100%;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+    border-radius: 20px;
+	background-color: #23AB6F;
+	color: white;
+	font-size: 16px;
+    transition: all 0.4s;
+}
+input[type="submit"]:hover,
+input[type="submit"]:active{
+	cursor: pointer;
+	background-color: #008b4f;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+input[type="button"] {
+	width: 106.66%;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+    border-radius: 20px;
+	background-color: #23AB6F;
+	color: white;
+	font-size: 16px;
+}
+input[type="button"]:hover,
+input[type="button"]:active{
+	width: 106.66%;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+	transition: background-color 0.3s;
+	transition: box-shadow 0.3s;
+	background-color: #008b4f;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	color: white;
+	font-size: 16px;
+}
+
+
+
+#dokonceniFormulare{
+	color: red;
+	text-align: center;
+
+}
+#kontrolaHesla{
+	color: red;
+	text-align: center;
+}
+#emailIsUse{
+	color: red;
+	text-align: center;
+}
+#non_existing_email{
+	color: red;
+	text-align: center;
+}
+#accountIsMade{
+	color: green;
+	text-align: center;
+}
+p{
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+#souhlas{
+    text-align: start;
+    font-size: 13px;
+}
+p a{
+    text-decoration: none;
+    /* margin-left: 5px; */
+	color: #23AB6F;
+}
+.para-2{
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	margin-top: 30px;
+}
+.para-2 a{
+	margin-left: 10px;
+	color: #23AB6F;
+
+}
+/*-----------Formulář se úspěšně odeslal---------------*/
+#sentSuccess{
+    margin: auto;
+    margin-top: 200px;
+}
+.success{
+    margin: auto;
+    transform: scale(200%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border: 4px solid #24A669;
+    border-radius: 50%;
+}
+#sentSuccess h3{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    font-weight: normal;
+}
+#sentSuccess h4{
+    font-size: 22px;
+    text-align: center;
+}
+#checkboxSubscribe{
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 10px;
+    justify-content: space-around;
+    /* justify-content: left; */
+}
+#checkbox{
+    /* position: relative;
+    display: block;
+    width: 50px;
+    margin: auto; */
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #a6a5a5;
+    border-radius: 5px;
+    border-bottom: none !important;
+    margin: auto !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+#checkbox::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 16px;
+    color: #fff;
+    display: none;
+}
+#checkbox:hover{
+    background-color: #a6a5a5;
+}
+#checkbox:checked{
+    background-color: #24A669;
+}
+#checkbox:checked:after{
+    display: block;
+}
+#checkboxLabel{
+    color: #fff;
+    font-size: 13px;
+}
+	/*-----------patička---------------*/
+    .dolni {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+        height: 350px;
+        padding: 1.5vh 6.43vw;
+        box-sizing: border-box;
+        background: #212832;
+    }
+    .dolni ul{
+        list-style: none;
+        float: left;
+        width: 350px;
+        margin: 4.23vh 0px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .dolni ul li a{
+        line-height: 4.23vh;
+        color: #fff;
+        padding: 1.43vh 2.14vw;
+        text-decoration: none;
+        font-size: 2vh;
+        font-weight: bold;
+        text-transform: none;
+    }
+    .dolni ul li a:hover{
+        font-size: 16px;
+        border-bottom: 0.23vh solid white;
+        transition: font-size 0.3s;
+    }
+    .dolni ul #socialNetworks{
+        padding-bottom: 30px;
+    }
+    .dolni ul #socialNetworks a{
+        line-height: 4.23vh;
+        padding: 1.43vh 1vw;
+    }
+    #firstLink{
+        padding: 1.43vh 1vw;
+        padding-left: 1vw;
+        padding-right: 0;
+    }
+    
+    .dolni ul #socialNetworks a:hover{
+        border-bottom: none !important;
+        transition: font-size 0.3s;
+    }
+    .copy{
+        line-height: 4.23vh;
+        color: #fff;
+        padding: 1.43vh 2.14vw;
+        text-decoration: none;
+        font-size: 2vh;
+        font-weight: bold;
+        text-transform: none;
+    }
+    /* stop floating */
+    .clearfix {zoom: 1}
+    .clearfix:after {
+        content: ".";
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    /* Keyframes */
+    @keyframes reveal{
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fromTop{
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes fromBottom{
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }

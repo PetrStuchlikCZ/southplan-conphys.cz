@@ -1,0 +1,77 @@
+#crossroadBeton{
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.formBeton{
+    display: flex;
+    /* width: 80%; */
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+.vstup{
+    display: flex;
+    flex-direction: column;
+    gap: 0px !important;
+}
+.zadaniTramu{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+.fontsize18{
+    font-size: 18px;
+}
+.zadaniTramu h3{
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.zadaniTramu h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.zadaniTramu strong{
+    font-weight: normal;
+}
+.zadaniTramu label{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.zadaniTramu input{
+	width: 100%;
+	padding: 7px;
+	/* margin: auto; */
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	color: #fff;
+	outline: none;
+}
+.inputSVk{
+    width: 180px;
+}
+.inputSV{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+#AB{
+    gap: 0px !important;
+}

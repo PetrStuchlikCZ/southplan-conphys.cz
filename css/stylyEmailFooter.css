@@ -1,0 +1,240 @@
+.dolni {
+    display: flex;
+    flex-direction: row;
+}
+
+.dolni #formAddEmail{
+    /* display: flex; */
+    flex-direction: column;
+    width: 300px;
+    align-items: flex-start;
+    /* float: right; */
+    margin: 4.23vh 0px;
+    margin-left: 30px;
+}
+.dolni #formAddEmailMobil{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    /* float: right; */
+    margin: 4.23vh 0px;
+    /* margin-left: 30px; */
+}
+.tooltip-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px solid #23AB6F;
+    padding: 0px;
+}
+.question-mark {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 2px 6px;
+    font-size: 14px;
+    /* display: inline-block; */
+    float: right;
+}
+#questionText{
+    position: relative;
+    left: 300px;
+    bottom: 100px;
+    margin-left: 5px;
+    display: none;
+    background-color: #fff;
+    z-index: 10;
+    padding: 2px 7px;
+}
+
+#questionText p{
+    font-size: 14px;
+    margin: 0px !important;
+    color: black !important;
+}
+@media only screen and (max-width: 1100px){
+    #questionText{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 950px){
+    #questionText{
+        width: 120px;
+        padding: 2px 4px;
+    }
+    #questionText p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #questionText{
+        left: 150px;
+    }
+}
+
+#mobilQuestionText{
+    text-align: start !important;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px !important;
+    color: #fff !important;
+}
+#addEmailP{
+    text-align: start;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0.75vh;
+    /* line-height: 4.23vh; */
+    font-size: 2vh;
+    font-weight: bold;
+}
+#formAddEmail #inputEmail{
+    width: auto !important;
+    padding: 7px;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid #23AB6F; */
+    color: #fff;
+    outline: none;
+    margin-top: 0px !important;
+    
+}
+#formAddEmail #inputEmail::placeholder{
+	color: rgb(224, 224, 224);
+}
+#formAddEmail #submitEmail{
+    width: 100%;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+    border-radius: 20px;
+	background-color: #23AB6F;
+	color: white;
+	font-size: 16px;
+    transition: all 0.4s;
+}
+#formAddEmail #submitEmail:hover,
+#formAddEmail #submitEmail:active{
+    cursor: pointer;
+	width: 100%;
+	height: 35px;
+	/* margin-top: 20px; */
+	border: none;
+	background-color: #008b4f;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	/* transition: background-color 0.3s;
+	transition: box-shadow 0.3s; */
+	color: white;
+	font-size: 16px;
+}
+#addedSuccess{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 250px;
+    z-index: 5;
+    padding-top: 35px;
+    width: 50%;
+    margin-left: 24%;
+    margin-right: 24%;
+    border-bottom: 2px solid #24A669;
+    text-decoration: none;
+}
+#addedSuccess h3{
+    margin-top: 50px;
+    font-weight: normal;
+    color: #fff;
+}
+#addedSuccess h4{
+    margin-top: 10px;
+    font-weight: normal;
+    color: #fff;
+}
+@media only screen and (max-width: 475px){
+    #addedSuccess{
+        width: 80%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #addedSuccess h3{
+        text-align: center;
+    }
+    
+}
+.success{
+    margin: auto;
+    transform: scale(200%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border: 4px solid #24A669;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 690px){
+    .dolni{
+        flex-direction: column;
+        height: 630px;
+    }
+    .dolni ul{
+        width: auto;
+    }
+    
+    .dolni #formAddEmail{
+        display: none;
+        margin-left: 0px;
+        /* position: relative;
+        bottom: 380px; */
+    } 
+    .dolni #formAddEmailMobil{
+        display: flex;
+    }
+}
+/* -------mobil----------- */
+#formAddEmailMobil #inputEmail{
+    /* width: 100%; */
+    padding: 7px;
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid #23AB6F; */
+    color: #fff;
+    outline: none;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+#formAddEmailMobil #inputEmail::placeholder{
+	color: rgb(224, 224, 224);
+}
+#formAddEmailMobil #submitEmail{
+    width: 100%;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+    border-radius: 20px;
+	background-color: #23AB6F;
+	color: white;
+	font-size: 16px;
+    transition: all 0.4s;
+}
+#formAddEmailMobil #submitEmail:hover,
+#formAddEmailMobil #submitEmail:active{
+    cursor: pointer;
+	width: 100%;
+	height: 35px;
+	/* margin-top: 20px; */
+	border: none;
+	background-color: #008b4f;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	/* transition: background-color 0.3s;
+	transition: box-shadow 0.3s; */
+	color: white;
+	font-size: 16px;
+}

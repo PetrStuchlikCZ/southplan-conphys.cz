@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1300px){
+    .textObsah {
+        width: 70%;
+        /* margin: auto; */
+    }
+    .textObsah p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .horni #seznam{
+        display: none;
+    }
+    .horni #menuMobil{
+        display: flex;
+    }
+    .horni #crossMobil{
+        display: none;
+    }
+    main .nahled .text h3{
+        font-size: 40px;
+        /* top: 65vh; */
+    }
+}
+@media only screen and (min-width: 1050px){
+    
+    .horni #seznam{
+        display: flex !important;
+    }
+    .horni .ikonyMenu{
+        display: none !important;
+    }
+    .horni #seznamMobil{
+        display: none !important;
+    }
+    .horni #menuMobil{
+        display: none !important;
+    }
+    .horni #crossMobil{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .textObsah p{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 810px){
+    main .nahled{
+        background-position: center;
+        /* background-size: auto; */
+    }
+    main .nahled .text h3{
+        font-size: 35px;
+        /* top: 65vh; */
+    }
+    .textObsah{
+        width: 90%;
+        margin: auto;
+    }
+    .textObsah p{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 580px){
+    main .nahled .text h3{
+        font-size: 25px;
+        /* top: 65vh; */
+    }
+}
+@media only screen and (max-width: 410px){
+    main .nahled{
+        min-height: 270vh;
+    }
+    main .nahled .text h3{
+        font-size: 25px;
+        /* top: 65vh; */
+    }
+}
+@media only screen and (max-width: 410px){
+    .horni #crossMobil{
+        left: 60%
+    }
+    /* .horni #crossMobil button {
+        position: relative;
+        left: 50px;
+    } */
+    main .nahled{
+        min-height: 300vh;
+    }
+    main .nahled .text h3{
+        font-size: 20px;
+        /* top: 80vh; */
+    }
+    .textObsah{
+        width: 90%;
+        margin: auto;
+    }
+    .textObsah p{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 330px){
+    main .nahled .text h3{
+        font-size: 18px;
+        /* top: 65vh; */
+    }
+}

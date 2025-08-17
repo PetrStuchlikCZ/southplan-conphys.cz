@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1050px){
+    .horni #seznam{
+        display: none;
+    }
+    .horni #menuMobil{
+        display: flex;
+    }
+    .horni #crossMobil{
+        display: none;
+    }
+  
+}
+@media only screen and (min-width: 1050px){
+    
+    .horni #seznam{
+        display: flex !important;
+    }
+    .horni .ikonyMenu{
+        display: none !important;
+    }
+    .horni #seznamMobil{
+        display: none !important;
+    }
+    .horni #menuMobil{
+        display: none !important;
+    }
+    .horni #crossMobil{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 810px){
+    main .nahled{
+        background-position: center;
+        /* background-size: auto; */
+    }
+   
+}
+@media only screen and (max-width: 580px){
+ 
+}
+@media only screen and (max-width: 530px){
+ 
+}
+@media only screen and (max-width: 410px){
+    .horni #crossMobil{
+        left: 60%
+    }
+    #crossroadI{
+        flex-direction: column;
+    }
+    #crossroadGeodezie{
+        flex-direction: column;
+    }
+    .crossroadButton{
+        padding: 25px 0px;
+    }
+}
+@media only screen and (max-width: 330px){
+   
+}

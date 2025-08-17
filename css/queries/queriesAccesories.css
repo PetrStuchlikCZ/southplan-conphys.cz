@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1050px){
+    .horni #seznam{
+        display: none;
+    }
+    .horni #menuMobil{
+        display: flex;
+    }
+    .horni #crossMobil{
+        display: none;
+    }
+    #tabulka{
+        padding-right: 0px;
+    }
+    .stepText{
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 1050px){
+    
+    .horni #seznam{
+        display: flex !important;
+    }
+    .horni .ikonyMenu{
+        display: none !important;
+    }
+    .horni #seznamMobil{
+        display: none !important;
+    }
+    .horni #menuMobil{
+        display: none !important;
+    }
+    .horni #crossMobil{
+        display: none !important;
+    }
+   
+}
+@media only screen and (max-width: 810px){
+    main .nahled{
+        background-position: center;
+        /* background-size: auto; */
+    }
+    #tabulka{
+        padding-left: 28vw;
+    }
+    #tabulka p{
+        width: 25vw;
+    }
+    .stepText{
+        margin-left: 20px;
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 680px){
+    .stepText{
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 580px){
+    .stepText{
+        font-size: 14px;
+        width: 360px;
+    }
+    #cookies{
+        width: 100%;
+    }
+  #privacy{
+    width: 100%;
+  }
+  #zpracovani{
+    width: 100%;
+  }
+  .oneLine .kategorie {
+    padding-left: 5px;
+  }
+  #dodatek{
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 580px){
+    .stepText{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 500px){
+   .text{
+    font-size: 14px;
+   }
+   #dodatek{
+    font-size: 14px;
+   }
+   .stepText{
+    width: 280px;
+}
+}
+@media only screen and (max-width: 410px){
+    .horni #crossMobil{
+        left: 60%
+    }
+
+}
+@media only screen and (max-width: 330px){
+  
+}

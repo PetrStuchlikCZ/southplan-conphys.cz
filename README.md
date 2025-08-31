@@ -21,5 +21,5 @@ Future updates may include a database and expanded functionality.
 
 ⚠️ Note on Git usage
 
-I connected this project to Git only at the final stage of development, as I was still learning how to work with version control.
+I connected this project to Git only at the final stage of development, as I was still learning how to work with version control. Everything is on branch master.
 Therefore, the commit history may not fully reflect the actual step-by-step workflow as it would be in a professional setting.
